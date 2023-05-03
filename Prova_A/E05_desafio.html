@@ -7,12 +7,18 @@
     Calcule a quantidade total de litros de combustível consumidos e também o custo total em revisão da motocicleta.
     */
 
-    //ENTRADA
+    //ENTRADA]
+    let doisMilQuilometros = Number(prompt(`Insira 200,00 reais do pedagio a cada 2000km`))
+    const quilometrosCombustivel = Number(prompt(`Insira quantos quilômetros a motocicleta consegue percorrer com cada litro de combustível:`).replace(",", "."));
+    const quilometragemPercorrida = Number(prompt(`Insira também qual a quilometragem que já percorreu:`));
 
 
     //PROCESSAMENTO
+    doisMilQuilometros = doisMilQuilometros
+    const valorTotalLitros = Number(quilometragemPercorrida / quilometrosCombustivel)
+    const CustoTotalRevisao = Number()
 
 
     //SAÍDA
-
+    alert(`A quantidade total de litros de dcombústivel é:${valorTotalLitros}`)
 </script>
